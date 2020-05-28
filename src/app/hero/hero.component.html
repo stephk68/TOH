@@ -1,0 +1,20 @@
+<div>
+    <!--<label>name:
+        <input [(ngModel)]="hero.nom" placeholder="name"/>
+      </label>-->
+</div>
+<!--<h2>{{hero.nom | uppercase}} Details</h2>
+<div> <span>id:</span>{{hero.id}}</div>
+<div> <span>id:</span>{{hero.nom}}</div>-->
+<br/>
+<h2>Les heros</h2>
+
+<ul class="list-group col-lg-4"> 
+  <li *ngFor="let heros of hero"  class="list-group-item list-group-item-action">
+    <a routerLink="/detail/{{heros.id}}">
+      <span class="badge">{{heros.id}} </span> {{heros.nom}}
+    </a>
+  </li>
+</ul>
+
+

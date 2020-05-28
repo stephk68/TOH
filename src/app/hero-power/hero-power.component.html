@@ -1,0 +1,10 @@
+<div *ngIf="hero" >
+    <h4>{{ hero.nom  | uppercase}}</h4>
+    <div>
+        <label>name:
+          <input [(ngModel)]="hero.nom" placeholder="name"class="form-contol" />
+        </label>
+    </div>
+    <button (click)="goBack()" class="btn btn-danger">retour</button>
+    <app-messages></app-messages>
+</div>

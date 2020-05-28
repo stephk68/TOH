@@ -1,0 +1,21 @@
+<h3>Top Heroes</h3>
+<!--<div class="col-sm-4">
+  <a *ngFor="let heros of hero" class=""  routerLink="/detail/{{heros.id}}">
+    <div class="module hero">
+      <h4>{{heros.name}}</h4>
+    </div>
+  </a>
+</div>-->
+<div class="row">
+  <div *ngFor="let heros of hero" class="card-deck">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="">
+      <div class="card-body">
+        <a routerLink="/detail/{{heros.id}}"class="card-title">{{heros.nom}}</a>
+        <p class="card-text"></p>
+        <a routerLink="/detail/{{heros.id}}" class="btn btn-primary">Rediriger</a>
+      </div>
+    </div>
+  </div>
+  
+</div>
