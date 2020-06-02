@@ -8,7 +8,7 @@ import {MessagesService} from '../messages.service';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
- 
+
   hero: Hero[];
   constructor(private heroService: HeroService) { }
 
@@ -17,8 +17,7 @@ export class HeroComponent implements OnInit {
     this.getHero();
   }
   getHero(): void{
-       this.heroService.getHeroes().subscribe(hero =>this.hero = hero);
+       this.heroService.getHeroes().subscribe(hero => this.hero = hero);
   }
 
-  
 }

@@ -14,17 +14,17 @@ export class HeroPowerComponent implements OnInit {
   constructor(private route: ActivatedRoute, private HeroServ: HeroService, private location: Location) { }
 
   ngOnInit(): void {
-    this.getHero();
+  //  this.getHero();
     console.log("here", this.hero);
   }
- getHero(): void{
+ /*getHero(): void{
 
    const id = +this.route.snapshot.paramMap.get('id');
    this.HeroServ.getHero(id).subscribe( hero => {
      console.log('hererererffe');
-    this.hero = hero
-   })
- }
+     this.hero = hero;
+   });
+ }*/
  goBack(){
    this.location.back();
  }
